@@ -1,0 +1,1000 @@
+   23  gre -i file1.txt
+   24  grep -i file1.txt
+   25  grep -w test file1.txt
+   26  grep -e test -e jump file1.txt
+   27  ls
+   28  ls -lrt *file*
+   29  ls -lt
+   30  ls -lt | head -1
+   31  ls -lt
+   32  ls -lt | head -1
+   33  ls -lrt | tail -1
+   34  grep test file1.txt 
+   35  grep -v file1.txt 
+   36  cat file1.txt
+   37  cat file1.txt | grep test
+   38  ls
+   39  rmdir instant7
+   40  ls
+   41  grep ls "test*"
+   42  chmod 777 abcd.txt 
+   43  ls
+   44  ls -lrt
+   45  chmod 400 abcd.txt 
+   46  vi abcd.txt 
+   47  ls -lrt
+   48  pwd
+   49  chmod 777 instant2
+   50  chmod 777 -R  instant2
+   51  cd instant2
+   52  ls
+   53  chmod -R 777 superfile.txt
+   54  chmod 777 superfile.txt
+   55  cd superfile.txt
+   56  chmod 777 file11.txt
+   57  c file11.txt
+   58  ls
+   59  ls- lrt
+   60  cd ..
+   61  ls
+   62  ls -lrt
+   63  chmod 777 *
+   64  ls -lrt
+   65  chmod 644 superfile.txt 
+   66  ls -lrt
+   67  cp file1.txt file4.txt 
+   68  cat file4.txt 
+   69  mv file1.txt file8.txt 
+   70  ls -lrt
+   71  chown root file7.txt
+   72  sudo chown root file7.txt
+   73  ls -lrt
+   74  chgrp root file7.txt
+   75  sudo chgrp root file7.txt
+   76  sed "s/test/time" file1.txt
+   77  sed "s/test/time/g" file1.txt
+   78  sed 's/test/time/g' file1.txt
+   79  ls
+   80  vi file1.txt
+   81  sed -i 's/time/kk/g' file1.txt
+   82  grep -l -R kk
+   83  grep -l -R kk *
+   84  grep -l -R "kk"
+   85  grep -l -R "kk"*
+   86  grep -l -R "test" .
+   87  grep -l -R "kk" .
+   88  ls
+   89  mkdir q.txt
+   90  vi q.txt/
+   91  vi q.txt
+   92  ls
+   93  ls -lrt
+   94  touch jj.txt
+   95  vi jj.txt 
+   96  sed -n "3p" jj.txt 
+   97  sed -n "2,3p" jj.txt 
+   98  vi jj.txt 
+   99  sed -n "3p" jj.txt 
+  100  sed -n "2,3p" jj.txt 
+  101  sed -n "2,$p" jj.txt 
+  102  sed -n "2,3p" jj.txt 
+  103  sed -n "2,$,p" jj.txt 
+  104  sed -n "2,$p" jj.txt 
+  105  ls -lrt
+  106  vi file2.txt
+  107  cat file2.txt
+  108  awk "[host]/,/[edge]" file2.txt
+  109  awk "host/,/edge" file2.txt
+  110  awk 'host/,/edge' file2.txt
+  111  awk '/host/,/edge/' file2.txt
+  112  ls -lrt
+  113  ls -lrt head -1 | cut -d " " f2;
+  114  ls -lrt head -1 | cut -d " " -f2;
+  115  ls -lrt | head -1 | cut -d " " -f2;
+  116  ls -lrt |tail -n+3 | awk -F " " '{print $5}'
+  117  history
+  118  df -h
+  119  du -h file2.txt
+  120  ps -ef
+  121  sleep 1000
+  122  ps -f
+  123  ps -ef
+  124  ps -ef | grep sleep
+  125  kill -9 43134
+  126  top
+  127  uname -v
+  128  top
+  129  clear
+  130  ps -ef
+  131  ps -ef| grep java
+  132  sudo yum locate install
+  133  yum install
+  134  sudo yum install
+  135  find . -name "file2.txt"
+  136  find /home/ec2-user/ -type f mtime +10
+  137  find /home/ec2-user/ -type f -mtime +10
+  138  find . /home/ec2-user/ type -f mtime +30
+  139  find . /home/ec2-user/ type f - mtime +30
+  140  find . /home/ec2-user/ type f -mtime -2
+  141  clear
+  142  sed 's/test/newtest/g' file2.txt
+  143  awk '/host/,/edge' file2.txt
+  144  awk '/host/,/edge/' file2.txt
+  145  cut -d " " file2.txt
+  146  cut -d ' ' file2.txt
+  147  find . type f -mtime -2
+  148  find . d -mmin+10
+  149  find . d -mmin +10
+  150  find . type f -mtime +10
+  151  find . type f -mtime -10
+  152  find . type -f perm 0644
+  153  find . type -f -perm 0644
+  154  find . type f -perm 0644
+  155  find . type f -perm 0777
+  156  find . type f -empty
+  157  sudo yum install locate
+  158  history
+  159  tree
+  160  sudo yum install tree
+  161  treee
+  162  tree
+  163  find . type f -perm 0644
+  164  find . -maxdepth 1 type f -empty 
+  165  find . type f -size +1M
+  166  find . -type f -size +1M
+  167  find . -type f -size +1K
+  168  find /home/ec2-user/ type f -empty
+  169  find /home/ec2-user/ type f -empty | rm
+  170  find /home/ec2-user/ type f -empty
+  171  find /home/ec2-user/ type f -empty | xargs rm
+  172  touch file{1..25}.txt
+  173  ls
+  174  ls -lrt | grep 'ile.tx'
+  175  ls -lrt | grep *ile.tx*
+  176  ls -lrt | grep *ile[0-9].tx*
+  177  ls -lrt | grep *ile*
+  178  ls -lrt | grep file
+  179  find . type -f -mmin -5
+  180  find . -type f -mmin -5
+  181  find . -type f -mmin +5
+  182  mkdir 20june
+  183  cd 20june/
+  184  mkdir -p /home/ec2-user/20june/copy1/copy2
+  185  ls
+  186  cd copy1
+  187  ls
+  188  touch copy3.txt
+  189  ln -s /home/ec2-user/20june/copy1/copy2/copy3.txt link1.txt
+  190  ls -lrt
+  191  vi link1.txt 
+  192  echo -e "hello message" > link1.txt 
+  193  cat link1.txt 
+  194  echo -e "new message\n support message \n dfjdosfjrioesrjf" >> link1.txt 
+  195  cat link1.txt 
+  196  cd -
+  197  ln -s /home/ec2-user/file4.txt link3.txt
+  198  ls -lrt
+  199  cd ..
+  200  ln /home/ec2-user/20june/copy1/copy2/copy3.txt hardlink
+  201  ls -lrt
+  202  cat hardlink
+  203  ls -lrt |grep hard
+  204  cat hardlink 
+  205  cd -
+  206  ls
+  207  cd copy1/copy2/
+  208  ls
+  209  rm copy3.txt 
+  210  cd /../..
+  211  cd ..
+  212  ls -lrt
+  213  pwd
+  214  cd /home/ec2-user/
+  215  ls -lrt
+  216  cat hardlink 
+  217  ls i
+  218  ls -i
+  219  ls -i |grep file15
+  220  cat /proc/cpuinfo
+  221  clear
+  222  uname
+  223  uversion
+  224  uname -a
+  225  uname -v
+  226  whoami
+  227  who
+  228  df -h
+  229  history
+  230  df -h
+  231  df -Th
+  232  df -i
+  233  df -h .
+  234  clear
+  235  df -h .
+  236  fallocate -l 500M sample.txt
+  237  df -h
+  238  df -h .
+  239  locate sample.txt
+  240  ls
+  241  du -h sample.txt
+  242  rm sample.txt
+  243  ls
+  244  dh -h .
+  245  df -h .
+  246  ls -lrt
+  247  df -h
+  248  fallocate 300M newsampletxt.txt
+  249  fallocate -l  300M newsampletxt.txt
+  250  df -h
+  251  df -h .
+  252  rm newsampletxt.txt 
+  253  fallocate -l 400M newpg.txt
+  254  cat newpg.txt &
+  255  ls -lrt
+  256  cat newpg.txt
+  257  df -h
+  258  df -h .
+  259  cat newpg.txt 
+  260  rm newpg.txt 
+  261  df -h .
+  262  lsof 
+  263  lsof | grep newpg.txt
+  264  fallocate -l 500M jump.txt
+  265  cat jump.txt &
+  266  rm jump.txt 
+  267  df -h .
+  268  lsof | jump.txt
+  269  lsof | grep jump.txt
+  270  ps -ef
+  271  kill -9 77424
+  272  ping 13.232.179.247
+  273  lsof |grep fil4.txt
+  274  bg
+  275  sudo yum install locate
+  276  ls
+  277  cat file6.txt &
+  278  bg
+  279  ping google.com
+  280  hostname
+  281  sudo yum install telnet
+  282  telnet 35.154.32.128 22
+  283  telnet 13.232.179.247 22
+  284  ping 13.232.179.247
+  285  telnet 13.232.179.247 22
+  286  ls -lrt
+  287  exit
+  288  ssh-keygen
+  289  ls -lart
+  290  cd .ssh/
+  291  ls
+  292  cat id_rsa
+  293  cat id_rsa_pub
+  294  cat id_rsa.pub
+  295  ls
+  296  vi authorized_keys 
+  297  ssh 13.232.179.247
+  298  id
+  299  cat /etc/passwd
+  300  sudo -i
+  301  sudo yum install util-linux
+  302  cat /etc/passwd
+  303  sudo su cobra
+  304  exit
+  305  sud -i cobra
+  306  sudo -i cobra
+  307  sudo su devops
+  308  sudo -i
+  309  vi /etc/ssh/sshd_config
+  310  sudo -i
+  311  history
+  312  ssh-keygen
+  313  ls -lrt
+  314  ls -lrt | grep ssh
+  315  ls -lart
+  316  cd .ssh/
+  317  ls
+  318  cat id_rsa.pub
+  319  vi authorized_keys 
+  320  ssh-copy-id ec2-user@172.31.4.74
+  321  ssh 172.31.4.74
+  322  ssh ec2-user@172.31.4.74
+  323  ls -lrt
+  324  ls
+  325  ls -lrt
+  326  exit
+  327  history
+  328  sudo -i
+  329  ls -lrt
+  330  scp file2.txt ec2-user@13.232.199.66 /home/ec2-user
+  331  scp file2.txt ec2-user@13.232.199.66 /home/ec2-user/
+  332  scp file2.txt 172.31.45.78:/home/ec2-user/
+  333  sudo /etc/ssh/sshd_config
+  334  vi /etc/ssh/sshd_config
+  335  sudo -i
+  336  ssh-keygen
+  337  ls -lart
+  338  cd .ssh
+  339  ls
+  340  cd id_rsa.pub
+  341  cat id_rsa.pub
+  342  ping 13.234.122.229
+  343  cat authorized_keys 
+  344  vi authorized_keys 
+  345  cd ..
+  346  ls -lrt
+  347  scp file1.txt ec2-user@172.31.33.30
+  348  scp file1.txt ec2-user@172.31.33.30 /home/ec2-user
+  349  scp file1.txt ec2-user@172.31.36.233 /home/ec2-user
+  350  netstat -tunlp
+  351  sudo yum install nmap
+  352  systemctl status 13.234.122.229
+  353  systemctl status 13.232.179.247
+  354  systemctl start 13.232.179.247
+  355  systemctl status httpd
+  356  sudo yum install nmap httpd
+  357  systemctl status httpd
+  358  systemctl start httpd
+  359  sudo -i
+  360  nmap -A 13.232.179.247
+  361  netstat -tunlp
+  362  nmap 
+  363  clear
+  364  lsblk
+  365  tree
+  366  lsblk
+  367  ishell
+  368  shell
+  369  echo $shell
+  370  echo $SHELL
+  371  mkdir scripts
+  372  cd scripts/
+  373  vi basic_scripts.sh
+  374  ls
+  375  vi basic_scripts.sh
+  376  ls
+  377  ls -lrt
+  378  chmod 744 basic_scripts.sh 
+  379  ./basic_scripts.sh 
+  380  ./basic_scripts.sh test
+  381  vi basic_scripts.sh 
+  382  ./basic_scripts.sh 
+  383  ./basic_scripts.sh abc,abd
+  384  ./basic_scripts.sh abc abd
+  385  vi basic_scripts.sh 
+  386  ./basic_scripts.sh abc def ghi
+  387  ./basic_scripts.sh abc def ghi kit
+  388  cat basic_scripts.sh 
+  389  echo $SHELL
+  390  cat basic_scripts.sh 
+  391  vi basic_scripts.sh 
+  392  ./basic_scripts.sh 
+  393  vi newscript
+  394  ls -lrt
+  395  chmod 744 newscript 
+  396  ./newscript 
+  397  vi newscript 
+  398  cat newscript 
+  399  ls
+  400  newscript > newscript.sh
+  401  vi ns.sh
+  402  ls -lrt
+  403  cat newscript.sh
+  404  ./ns.sh
+  405  sh ./ns.sh
+  406  chmod 744 ns.sh
+  407  ./ns.sh
+  408  cd ns.sh
+  409  clear
+  410  vi super.sh
+  411  chmod 744 super.sh
+  412  ./super.sh 
+  413  vi super.sh 
+  414  ./super.sh kiran 25 1,2,2
+  415  vi disk.sh
+  416  sh ./disk.sh 
+  417  vi disk.sh 
+  418  sh ./disk.sh 
+  419  vi disk.sh 
+  420  sh ./disk.sh 
+  421  clear
+  422  sh ./disk.sh 
+  423  vi updatedscript.sh
+  424  ls
+  425  ls -lrt | grep .sh
+  426  cd script
+  427  cd scripts/
+  428  ls
+  429  cat super.sh
+  430  cat newscript.sh
+  431  cd ..
+  432  cat updatedscript.sh 
+  433  ls -lrt
+  434  cd script
+  435  cd scripts/
+  436  ls
+  437  cat disk.sh
+  438  vi if.sh
+  439  chmod 744 if.sh 
+  440  ./if.sh 5
+  441  cat -b if.sh 
+  442  cat -n if.sh 
+  443  vi if.sh 
+  444  ./if.sh 
+  445  cat if.sh 
+  446  vji if.sh 
+  447  vi if.sh 
+  448  ./if.sh 
+  449  ./if.sh 5
+  450  vi if.sh 
+  451  ./if.sh 5
+  452  vi if.sh 
+  453  cd scripts/
+  454  ls
+  455  cat if.sh 
+  456  :q!
+  457  vi if.sh 
+  458  ./if.sh 5
+  459  ./if.sh 3
+  460  vi biggest.sh
+  461  chmod 777 biggest.sh 
+  462  ./b
+  463  ./biggest.sh
+  464  cat -n biggest.sh 
+  465  vi biggest.sh 
+  466  ./biggest.sh
+  467  ./biggest.sh 5 4
+  468  vi biggest.sh 
+  469  ./biggest.sh 5 4
+  470  vi biggest.sh 
+  471  ./biggest.sh 5 4
+  472  vi if.sh 
+  473  ./if.sh 3 4
+  474  vi if.sh 
+  475  ./if.sh 3 4
+  476  ./if.sh 9  11
+  477  ./if.sh 9  1
+  478  vi if.sh 
+  479  cat if.sh 
+  480  vi .if
+  481  vi if.sh 
+  482  ./if.sh 
+  483  ./if.sh 9 1
+  484  cat if.sh 
+  485  ./if.sh 3 2
+  486  vi if.sh 
+  487  ./if.sh 3 2
+  488  vi count.sh
+  489  chmod 744 count.sh 
+  490  ./count.sh 
+  491  vi count.sh 
+  492  ./count.sh 
+  493  cat count.sh 
+  494  ls
+  495  clear
+  496  ./count.sh 
+  497  cat count.sh 
+  498  vi count.sh 
+  499  ./count.sh 
+  500  vi count.sh 
+  501  ./count.sh 
+  502  vi count.sh 
+  503  uptime
+  504  free -m
+  505  df -h
+  506  df -h .
+  507  clear
+  508  uptime
+  509  echo $?
+  510  dsf
+  511  echo $?
+  512  cat -ps/ef
+  513  echo $$
+  514  pf -ef
+  515  ps -ef
+  516  echo $!
+  517  echo $$
+  518  echo $!
+  519  echo $SHELL
+  520  echo $*
+  521  ls -lrt
+  522  cd scripts/
+  523  vi content.sh
+  524  chmod 744 content.sh 
+  525  ./content.sh 
+  526  cat content.sh 
+  527  vi content.sh 
+  528  cd scripts/
+  529  ls -lrt
+  530  vi leapyear.sh
+  531  chmod 744 leapyear.sh 
+  532  ./leapyear.sh 
+  533  vi leapyear.sh 
+  534  sh -x leapyear.sh 
+  535  vi leapyear.sh 
+  536  sh -x leapyear.sh 
+  537  clear
+  538  sudo yum install cronnie
+  539  sudo yum install cronie
+  540  which crontab
+  541  df -h .
+  542  crontab -l
+  543  date
+  544  clear
+  545  crontab -l
+  546  ls -lrt
+  547  sh ./disk.sh
+  548  clear
+  549  ls -lrt
+  550  cat disk.sh 
+  551  crontab -e
+  552  crontab -l
+  553  date
+  554  ls -lrt
+  555  crontab -l
+  556  crontab -e
+  557  date 
+  558  crontab -e
+  559  ls -lrt
+  560  crontab -e
+  561  ls -lrt
+  562  date
+  563  ls -lrt
+  564  pwd
+  565  cat crontab
+  566  crontab -e
+  567  ls -lrt
+  568  crontab -e 
+  569  pwd
+  570  crontab -e 
+  571  ls -lrt
+  572  ls -lrt | grep output
+  573  crontab -e
+  574  clear
+  575  Hi=Hello
+  576  echo Hi
+  577  echo $Hi
+  578  echo \$Hi
+  579  echo '$Hi'
+  580  echo '$Hi33'
+  581  echo "$Hi22"
+  582  clear
+  583  echo 'pwd'
+  584  echo '$pwd'
+  585  echo "pwd"
+  586  clear
+  587  echo `pwd`
+  588  clear
+  589  history
+  590  history
+  591  df -h .
+  592  df -h | head -2
+  593  df -h | head -1
+  594  df -h | tail -1
+  595  df -h | tail -1 | grep %
+  596  df -h | tail -1 | cut -d " " -f5
+  597  df -h | tail -1 | cut -d " " -f4
+  598  df -h | tail -1 | cut -d " " -f2
+  599  df -h|tail -1 | awk -F " " '{print $(NF-1)}'
+  600  df -h .
+  601  df -h . |tail -1 | awk -F " " '{print $(NF-1)}'
+  602  df -h . |tail -1 | awk {print $5}'
+  603  df -h . |tail -1 | awk '{print $5}'
+  604  df -h . |tail -1 | awk '{print $5}' | cut -d "%" -1F
+  605  df -h . |tail -1 | awk '{print $5}' | cut -d "%" -1f
+  606  df -h . |tail -1 | awk '{print $5}' | cut -d "%" -f1
+  607  df -h . |tail -1 | awk '{print $5}' | sed 's/%/ /g'
+  608  df -h . |tail -1 | awk '{print $5}' | sed 's/%//g'
+  609  cd scripts
+  610  ls -lrt
+  611  vi diskscript.sh
+  612  clear
+  613  vi diskscript.sh
+  614  df -h .
+  615  vi diskscript.sh 
+  616  sh ./diskscript.sh
+  617  cat diskscript.sh 
+  618  vi diskscript.sh 
+  619  sh ./diskscript.sh
+  620  cat diskscript.sh 
+  621  vi diskscript.sh 
+  622  sh ./diskscript.sh
+  623  sudo yum install mailx
+  624  sh ./diskscript.sh
+  625  sudo yum install mailx
+  626  sh ./diskscript.sh
+  627  sudo yum install sendmail
+  628  sh ./diskscript.sh
+  629  vi ./diskscript.sh 
+  630  sh ./diskscript.sh
+  631  which mail
+  632  pwd
+  633  crontab -e
+  634  chmod 744 diskscript.sh
+  635  ls -lrt | grep diskscript
+  636  crontab -e
+  637  crontab -l
+  638  cd /home/ec2-user/scripts/diskscript.sh
+  639  ls -lrt
+  640  vi addnum.sh
+  641  sh addnum.sh 
+  642  vi addnum.sh 
+  643  cat addnum.sh 
+  644  vi addnum.sh 
+  645  chmod 744 addnum.sh 
+  646  ./addnum.sh 
+  647  vi addnum.sh 
+  648  ./addnum.sh 
+  649  vi addnum.sh 
+  650  history
+  651  cd scripts/
+  652  vi filescript.sh
+  653  cat filescript.sh 
+  654  sh ./filescript.sh 
+  655  cat filescript.sh 
+  656  vi filescript.sh 
+  657  sh ./filescript.sh 
+  658  cd ..
+  659  ls -lrt
+  660  cd scripts/
+  661  sh ./filescript.sh 
+  662  sh -x ./filescript.sh 
+  663  clear
+  664  for i in {1..100}; do echo $i >> allnumbers.txt; done
+  665  cat allnumbers.txt 
+  666  cat allnumbers.txt | sort -r
+  667  uniq allnumbers.txt 
+  668  clear
+  669  vi while.sh
+  670  sh while.sh 
+  671  vi while.sh 
+  672  sh while.sh 
+  673  cd scripts/
+  674  vi while.sh 
+  675  sh ./while.sh 
+  676  sh ./while.sh 5
+  677  cat while.sh 
+  678  vi while.sh 
+  679  sh ./while.sh 5
+  680  sh ./while.sh 10
+  681  vi while.sh 
+  682  sh ./while.sh 10
+  683  vi while.sh 
+  684  sh ./while.sh 
+  685  sh ./while.sh 8
+  686  vi while.sh 
+  687  sh ./while.sh 
+  688  sh ./while.sh 7
+  689  ./factorial.sh 7
+  690  chmod 744 while.sh 
+  691  ./while.sh 5
+  692  cat while.sh 
+  693  cd scripts/
+  694  vi wordcount.sh
+  695  vi file.csv
+  696  cat file.csv 
+  697  cat file.csv | tail -n+2
+  698  cat file.csv | tail -n+2 | cut -d ":" -3f
+  699  cat file.csv | tail -n+2 | cut -d ":" -f3
+  700  cat file.csv | tail -n+2 | cut -d "," -f3
+  701  vi age.sh
+  702  cat file.csv | tail -n+2+1 | cut -d "," -f3
+  703  cat file.csv | tail expr -n+2 + 1 | cut -d "," -f3
+  704  for i in $(seq 10 25); do echo $i; done
+  705  ls -lrt
+  706  for i in `ls`; do echo $i;done
+  707  seq 1 10;
+  708  clear
+  709  vi addnum2.sh
+  710  sh ./addnum2.sh 
+  711  cat addnum2.sh 
+  712  vi addnum2.sh 
+  713  sh ./addnum2.sh 
+  714  vi addnum2.sh 
+  715  chmod 744 addnum2.sh 
+  716  ./addnum2.sh 2 4 4 21 42
+  717  -x ./addnum2.sh 2 4 4 21 42
+  718  sh -x ./addnum2.sh 3 5 32 31 12 53
+  719  clear
+  720  vi factorialn.sh
+  721  sh ./factorialn.sh 2 4
+  722  cat factorialn.sh 
+  723  vi factorialn.sh 
+  724  cd scripts/
+  725  vi factorialn.sh 
+  726  sh ./factorialn.sh 2 4
+  727  vi factfunc.sh
+  728  vi factfunc.sh 
+  729  sh ./factorialn.sh 2 4
+  730  ls -lrt
+  731  cat factfunc.sh 
+  732  :q!
+  733  sh ./factfunc.sh
+  734  sh ./factfunc.sh 2 2
+  735  vi factfunc.sh 
+  736  sh ./factfunc.sh 2 2
+  737  vi factfunc.sh 
+  738  sh ./factfunc.sh 2 2
+  739  vi factfunc.sh 
+  740  sh ./factfunc.sh 2 2
+  741  cat factfunc.sh 
+  742  vi factfunc.sh 
+  743  sh ./factfunc.sh 2 2
+  744  vi factfunc.sh 
+  745  sh ./factfunc.sh 2 2
+  746  vi factfunc.sh 
+  747  cd scripts/
+  748  vi multtask.sh
+  749  sh ./multtask.sh 
+  750  cat multtask.sh 
+  751  vi multtask.sh 
+  752  sh ./multtask.sh 
+  753  vi multtask.sh 
+  754  sh ./multtask.sh 
+  755  vi multtask.sh 
+  756  sh ./multtask.sh 
+  757  vi multtask.sh 
+  758  sh ./multtask.sh 
+  759  vi multtask.sh 
+  760  vi
+  761  cat multtask.sh 
+  762  sh ./multtask.sh 
+  763  c = exprt 2 /5 
+  764  c = expr 2 /5 
+  765  c = expr 2 / 5 
+  766  c= expr 2 / 5 
+  767  clear
+  768  echo "scale=4; 2/5" | bc
+  769  vi array.sh
+  770  sh ./array.sh 2 3 4 5 5
+  771  cat array.sh 
+  772  vi evenodd.sh
+  773  sh ./evenodd.sh 
+  774  vi evenodd.sh 
+  775  sh ./evenodd.sh 
+  776  vi evenodd.sh 
+  777  sh ./evenodd.sh 
+  778  vi evenodd.sh 
+  779  sh ./evenodd.sh 
+  780  vi evenodd.sh 
+  781  sh ./evenodd.sh 
+  782  vi evenodd.sh 
+  783  sh ./evenodd.sh 
+  784  $@
+  785  array=("abc" "bcd" "cdf") |echo ${array[0]}
+  786  array=("abc" "bcd" "cdf") | echo "${array[0]}"
+  787  array=("abc" "bcd" "cdf") | echo "array[0]"
+  788  array=("abc" "bcd" "cdf") | echo "$array[0]"
+  789  array=("abc" "bcd" "cdf") 
+  790  echo "$array[0]"
+  791  clear
+  792  cd scripts/
+  793  vi nestedloop.sh
+  794  sh ./nestedloop.sh 
+  795  sh -x ./nestedloop.sh 
+  796  clear
+  797  echo seq(1 5)
+  798  echo "seq(1 5)"
+  799  echo "$(seq(1 5))"
+  800  echo "$(seq 1 5 )"
+  801  echo "$(seq 1 7 100 )"
+  802  vi bigofn.sh
+  803  sh ./bigofn.sh 1 2 5 4 3 1
+  804  sh ./bigofn.sh 1 2 5 4 3 1
+  805  cat -b bigofn.sh 
+  806  vi biggest.sh 
+  807  vi bigofn.sh 
+  808  sh ./bigofn.sh 1 2 5 4 3 1
+  809  vi bigofn.sh 
+  810  sh ./bigofn.sh 1 2 5 4 3 1
+  811  clear
+  812  vi firstlstname.sh
+  813  cd scripts/
+  814  vi firstlastname.sh
+  815  sh ./firstlastname.sh 
+  816  vi firstlastname.sh
+  817  sh ./firstlastname.sh 
+  818  vi firstlastname.sh
+  819  sh ./firstlastname.sh 
+  820  cat firstlastname.sh
+  821  vi firstlastname.sh
+  822  sh ./firstlastname.sh 
+  823  vi firstlastname.sh
+  824  sh ./firstlastname.sh 
+  825  clear
+  826  ps -ef | grep "http"
+  827  ps -ef | grep "httpd"
+  828  clear
+  829  vi httpd.sh
+  830  sh ./httpd.sh 
+  831  sudo sh ./httpd.sh 
+  832  cat -b ./httpd.sh 
+  833  clear
+  834  vi httpd.sh 
+  835  sudo sh ./httpd.sh 
+  836  vi httpd.sh 
+  837  sudo sh ./httpd.sh 
+  838  sudo yum install httpd
+  839  df -h .
+  840  crontab -e
+  841  ls -lrt
+  842  crontab -e
+  843  crontab -l
+  844  chmod 744 httpd.sh 
+  845  date
+  846  cd /var/www/html
+  847  cat index.html
+  848  ls -lrt
+  849  wget download
+  850  curl -0 download
+  851  cd scripts/
+  852  ls -lrt
+  853  cat httpd.sh 
+  854  clear
+  855  ls -lrt
+  856  cd scripts/
+  857  ls
+  858  clear
+  859  ad
+  860  curl -I https://www.onlinegdb.com/online_bash_shell | head -1 | cut -d " " -f2
+  861  curl -I https://www.onlinegdb.com/online_bash_shell
+  862  curl -I https://www.onlinegdb.com/online_bash_shell | head -1 | cut -d " " -f2
+  863  curl -IsS https://www.onlinegdb.com/online_bash_shell | head -1 | cut -d " " -f2
+  864  cd scripts/
+  865  vi urlbased.sh
+  866  sh ./urlbased.sh 
+  867  sh ./urlbased.sh https://www.onlinegdb.com/online_bash_shell
+  868  cd .
+  869  cd ..
+  870  mkdir builds
+  871  touch builds(1 .. 100).log
+  872  touch builds[1 .. 10].log
+  873  touch build{1 . 1000}.log
+  874  ls -lrt
+  875  cd builds/
+  876  ls -lrt
+  877  touch build{1.1000}.log
+  878  ls -lrt
+  879  touch build{1..1000}.log
+  880  ls -lrt
+  881  rm build{1..1000}.log
+  882  ls -lrt
+  883  crontab -e
+  884  touch build{1..1000}.log
+  885  ls -lrt | head -975 | rm
+  886  ls -lrt | head -975 
+  887  ls -lrt | head -975 | rm
+  888  ls -lrt | head -975 | xargs rm
+  889  ls -lrt | head -975 | awk '{print $NF}'| xargs rm
+  890  ls -lrt
+  891  ls -lrt | head -975 | awk '{print $NF}'| xargs rm
+  892  touch build{3..566}.log
+  893  ls -lrt
+  894  vi del.sh
+  895  ls -lrt | head -975 | awk {print NF} | xargs rm
+  896  ls -lrt | head -975 | awk "{print NF}" | xargs rm
+  897  ls -lrt
+  898  ls -lrt | head -300 | awk "{print NF}" | xargs rm
+  899  ls -lrt | head -300 | awk '{print $NF}' | xargs rm
+  900  ls -lrt
+  901  ls -lrt | head -300 | awk '{print $NF}' | xargs rm
+  902  ls -lrt | head -100 | awk '{print $NF}' | xargs rm
+  903  vi del.sh
+  904  sh ./del.sh 
+  905  vi del.sh
+  906  touch text{1..1000}.txt
+  907  ls -lrt
+  908  sh ./del.sh 
+  909  cat ./del.sh
+  910  vi del.sh
+  911  sh ./del.sh 
+  912  vi del.sh
+  913  ls | wc -l
+  914  ls
+  915  sh ./del.sh 
+  916  ls
+  917  vi ./del.sh 
+  918  touch text{1..1000}.txt
+  919  ls
+  920  vi ./del.sh 
+  921  sh ./del.sh 
+  922  ls
+  923  touch app{1..400}.log
+  924  ls
+  925  ls | grep *.log
+  926  ls | grep log
+  927  touch app{1..400}.log
+  928  vi ./del.sh 
+  929  cat de1.sh
+  930  ls | grep .sh
+  931  sh ./del.sh
+  932  clear
+  933  cd /var/log/httpd
+  934  sudo cd /var/log/httpd
+  935  ls -lrt
+  936  ls -t | tail -n+200 | awk 'print{$NF}' |xargs rm
+  937  ls -t | tail -n+200 | awk '{print $NF}' |xargs rm
+  938  ls -t
+  939  ls -t | tail -n+200 | awk '{print $NF}' |xargs rm
+  940  ls -t
+  941  ls -t | tail -n+100 | awk '{print $NF}' |xargs rm
+  942  ls -t
+  943  ls -t | tail -n+50 | awk '{print $NF}' |xargs rm
+  944  ls -t
+  945  cd /var/www/logs
+  946  find . type -f log
+  947  find . -type f log
+  948  cd scripts/
+  949  vi casest.sh
+  950  sh ./casest.sh 
+  951  vi casest.sh
+  952  sh ./casest.sh 
+  953  clear
+  954  vi days.sh
+  955  day
+  956  date
+  957  date | cut -d " " -f1
+  958  vi days.sh
+  959  echo $HOME
+  960  cd scripts/
+  961  pwd
+  962  cp /home/ec2-user/scripts/days.sh /home/ec2-user/
+  963  cp days.sh /home/ec2-user/
+  964  ls | grep days
+  965  cd ..
+  966  ls | grep days
+  967  cp days.sh /home/ec2-user/scripts
+  968  vi days.sh 
+  969  mkdir tempfile
+  970  cd tempfile
+  971  cd ..
+  972  pwd
+  973  cd /home/ec2-user/tempfile/ | touch dumpfile{1..20}.txt
+  974  cd tempfile/
+  975  ls
+  976  cd /home/ec2-user/tempfile/ && touch dumpfile{1..20}.txt
+  977  ls
+  978  cd ..
+  979  vi days.sh 
+  980  ls -lt | tail -n+10 | awk '{print $NF}' | xargs rm
+  981  cd builds/
+  982  ls -lt | tail -n+10 | awk '{print $NF}' | xargs rm
+  983  ls
+  984  cd /home/ec2-user/builds/ && ls -lt | tail -n+10 | awk '{print $NF}' | xargs rm
+  985  ls
+  986  cd /home/ec2-user/builds/ && ls -lt | tail -n+10 | awk '{print $NF}' | xargs rm
+  987  vi days.sh 
+  988  cd scripts/
+  989  vi usecase.sh
+  990  sh ./usecase.sh 
+  991  cat usecase.sh 
+  992  vi usecase.sh
+  993  sh ./usecase.sh 
+  994  cd scripts/
+  995  ls
+  996  cd scripts/
+  997  diff content.sh nestedloop.sh 
+  998  clear
+  999  sdiff content.sh disk.sh 
+ 1000  diff content.sh disk.sh 
+ 1001  diff content.sh disk.sh | head -1
+ 1002  ls
+ 1003  cat biggest.sh
+ 1004  cat factorialn.sh 
+ 1005  sudo yum install git -y
+ 1006  echo $GIT
+ 1007  version git
+ 1008  which git
+ 1009  clear
+ 1010  whereis git
+ 1011  git version
+ 1012  clear
+ 1013  ls
+ 1014  echo "# shellsc" >> README.md
+ 1015  git init
+ 1016   git add *
+ 1017  git commit -m "first commit"
+ 1018  git branch -M master
+ 1019  git remote add origin https://github.com/Preetham0171999/shellsc.git
+ 1020  git push -u origin master
+ 1021  history
+ 1022  history > history.txt
