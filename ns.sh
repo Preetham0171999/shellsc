@@ -1,0 +1,8 @@
+#!/bin/bash/
+
+
+Name = "ajay"
+Age =26
+Num = "2,4,5,8"
+
+echo "this is $Name & $Age consist of $Num"
