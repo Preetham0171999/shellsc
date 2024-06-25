@@ -1,3 +1,5 @@
+contains all commands executed by ec2-user
+
    23  gre -i file1.txt
    24  grep -i file1.txt
    25  grep -w test file1.txt
