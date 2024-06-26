@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+#service based file
 
 services=("httpd" "sshd")
 
